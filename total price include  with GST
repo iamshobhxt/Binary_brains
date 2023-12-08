@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+  float pen, pencil, eraser;
+  float gst=18;
+  printf(" Enter the price of pen:");
+  scanf("%f",&pen);
+  printf(" Enter the price of pencil:");
+  scanf("%f",&pencil);
+  printf(" Enter the price of eraser:");
+  scanf("%f",&eraser);
+  
+  float total_price=pen+pencil+eraser;
+  
+  printf(" total price without GST:%f\n",total_price);
+  
+  float final_price= (total_price*gst)/100 + total_price;
+  
+  printf(" total price include GST :%f",final_price);
+
+    return 0;
+}
